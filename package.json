@@ -1,0 +1,31 @@
+{
+  "name": "voting-webapp-fcc",
+  "version": "1.0.0",
+  "description": "Voting web app for freeCodeCamp",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+http://github.com/valenbg1/voting-webapp-fcc.git"
+  },
+  "bugs": "http://github.com/valenbg1/voting-webapp-fcc/issues",
+  "keywords": [
+    "Express",
+    "Node",
+    "Javascript",
+    "MongoDB",
+    "Mongoose",
+    "Full Stack",
+    "Passport"
+  ],
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Valentín Blanco",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-session": "^1.14.1",
+    "mongoose": "^4.5.10",
+    "passport": "^0.3.2"
+  }
+}
