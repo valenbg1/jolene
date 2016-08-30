@@ -8,3 +8,7 @@ body {
 #main_container > .navbar {
     margin-bottom: 20px;
 }
+
+#loading_spinner > h1 {
+    margin-bottom: 20px;
+}

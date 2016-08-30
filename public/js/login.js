@@ -7,7 +7,9 @@ var LoginJS = {};
     var angularJS = {};
         
     angularJS.loginCtrl = function($scope) {
+        angularJS.$scope = $scope;
         
+        IndexJS.btnLoginActive();
     };
     
     IndexJS.angularJS.votingAppFCC.controller("loginCtrl", angularJS.loginCtrl);
