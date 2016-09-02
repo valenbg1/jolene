@@ -1,8 +1,10 @@
 "use strict";
 
+/*global IndexJS*/
+
 var LoginJS = {};
 
-(function() {
+(function(IndexJS) {
     var jQueryDOM = {};
     var angularJS = {};
         
@@ -13,4 +15,4 @@ var LoginJS = {};
     };
     
     IndexJS.angularJS.votingAppFCC.controller("loginCtrl", angularJS.loginCtrl);
-})();
+})(IndexJS);

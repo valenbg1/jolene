@@ -1,8 +1,10 @@
 "use strict";
 
+/*global IndexJS*/
+
 var HomeJS = {};
 
-(function() {
+(function(IndexJS) {
     var jQueryDOM = {};
     var angularJS = {};
         
@@ -13,4 +15,4 @@ var HomeJS = {};
     };
     
     IndexJS.angularJS.votingAppFCC.controller("homeCtrl", angularJS.homeCtrl);
-})();
+})(IndexJS);

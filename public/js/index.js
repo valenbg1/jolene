@@ -1,14 +1,16 @@
 "use strict";
 
+/*global angular*/
+/*global jQuery*/
+
 var IndexJS = {};
 IndexJS.angularJS = {};
 
-(function() {
+(function(angular, $) {
     var jQueryDOM = {};
     var angularJS = {};
     
-    angularJS.votingAppFCC = angular.module("votingAppFCC", ["ngRoute", "ngAnimate"]);
-    IndexJS.angularJS.votingAppFCC = angularJS.votingAppFCC;
+    IndexJS.angularJS.votingAppFCC = angular.module("votingAppFCC", ["ngRoute", "ngAnimate"]);
     
     function btnsNavbarInactive() {
         jQueryDOM.btnsNavbar.removeClass("active");
@@ -29,8 +31,8 @@ IndexJS.angularJS = {};
         jQueryDOM.btnAbout.addClass("active");
     };
     
-    angularJS.votingAppFCC.config(
-        function($routeProvider) {
+    IndexJS.angularJS.votingAppFCC.config(
+        function($routeProvider, $locationProvider) {
             $routeProvider
                 .when("/", {
                     redirectTo: "/home"
@@ -50,6 +52,8 @@ IndexJS.angularJS = {};
                 .otherwise({
                     redirectTo: "/"
                 });
+                
+            $locationProvider.html5Mode(true);
         });
         
     angularJS.mainCtrl = function($scope) {
@@ -71,5 +75,5 @@ IndexJS.angularJS = {};
         });
     };
     
-    angularJS.votingAppFCC.controller("mainCtrl", angularJS.mainCtrl);
-})();
+    IndexJS.angularJS.votingAppFCC.controller("mainCtrl", angularJS.mainCtrl);
+})(angular, jQuery);

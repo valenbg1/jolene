@@ -1,8 +1,10 @@
 "use strict";
 
+/*global IndexJS*/
+
 var AboutJS = {};
 
-(function() {
+(function(IndexJS) {
     var jQueryDOM = {};
     var angularJS = {};
         
@@ -13,4 +15,4 @@ var AboutJS = {};
     };
     
     IndexJS.angularJS.votingAppFCC.controller("aboutCtrl", angularJS.aboutCtrl);
-})();
+})(IndexJS);
