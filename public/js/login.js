@@ -4,7 +4,7 @@
 
 var LoginJS = {};
 
-(function(IndexJS) {
+(function() {
     var jQueryDOM = {};
     var angularJS = {};
         
@@ -15,4 +15,4 @@ var LoginJS = {};
     };
     
     IndexJS.angularJS.votingAppFCC.controller("loginCtrl", angularJS.loginCtrl);
-})(IndexJS);
+})();

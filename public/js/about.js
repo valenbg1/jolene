@@ -4,7 +4,7 @@
 
 var AboutJS = {};
 
-(function(IndexJS) {
+(function() {
     var jQueryDOM = {};
     var angularJS = {};
         
@@ -15,4 +15,4 @@ var AboutJS = {};
     };
     
     IndexJS.angularJS.votingAppFCC.controller("aboutCtrl", angularJS.aboutCtrl);
-})(IndexJS);
+})();

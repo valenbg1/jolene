@@ -9,13 +9,19 @@
   },
   "bugs": "http://github.com/valenbg1/voting-webapp-fcc/issues",
   "keywords": [
-    "Express",
-    "Node",
     "Javascript",
-    "MongoDB",
-    "Mongoose",
     "Full Stack",
-    "Passport"
+    "Bootstrap",
+    "Font Awesome",
+    "jQuery",
+    "AngularJS",
+    "MongoDB",
+    "Node.js",
+    "Express",
+    "express-session",
+    "Mongoose",
+    "Passport",
+    "passport-local"
   ],
   "scripts": {
     "start": "node server.js"
@@ -26,6 +32,7 @@
     "express": "^4.14.0",
     "express-session": "^1.14.1",
     "mongoose": "^4.5.10",
-    "passport": "^0.3.2"
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
   }
 }
