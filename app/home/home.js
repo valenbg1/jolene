@@ -1,6 +1,6 @@
 "use strict";
 
-/*global IndexJS*/
+/*global AppJS*/
 
 var HomeJS = {};
 
@@ -11,8 +11,8 @@ var HomeJS = {};
     angularJS.homeCtrl = function($scope) {
         angularJS.$scope = $scope;
         
-        IndexJS.btnHomeActive();
+        AppJS.btnHomeActive();
     };
     
-    IndexJS.angularJS.votingAppFCC.controller("homeCtrl", angularJS.homeCtrl);
+    AppJS.angularJS.votingAppFCC.controller("homeCtrl", angularJS.homeCtrl);
 })();

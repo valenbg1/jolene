@@ -1,6 +1,6 @@
 "use strict";
 
-/*global IndexJS*/
+/*global AppJS*/
 
 var LoginJS = {};
 
@@ -11,8 +11,8 @@ var LoginJS = {};
     angularJS.loginCtrl = function($scope) {
         angularJS.$scope = $scope;
         
-        IndexJS.btnLoginActive();
+        AppJS.btnLoginActive();
     };
     
-    IndexJS.angularJS.votingAppFCC.controller("loginCtrl", angularJS.loginCtrl);
+    AppJS.angularJS.votingAppFCC.controller("loginCtrl", angularJS.loginCtrl);
 })();

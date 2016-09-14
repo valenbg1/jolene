@@ -9,6 +9,6 @@ body {
     margin-bottom: 20px;
 }
 
-#loading_spinner {
+#main_container > #loading_spinner {
     margin-bottom: 20px;
 }

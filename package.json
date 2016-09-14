@@ -2,7 +2,6 @@
   "name": "voting-webapp-fcc",
   "version": "1.0.0",
   "description": "Voting web app for freeCodeCamp",
-  "main": "server.js",
   "repository": {
     "type": "git",
     "url": "git+http://github.com/valenbg1/voting-webapp-fcc.git"

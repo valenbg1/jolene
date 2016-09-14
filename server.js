@@ -19,7 +19,7 @@ passport.use(new LocalStrategy(
         }
     }));
 
-app.use("/", express.static("public"));
+app.use("/", express.static("app"));
 
 app.use(passport.initialize());
 
@@ -30,7 +30,7 @@ app.post("/login", passport.authenticate("local", {session: false}),
 
 app.get("/*",
     function(req, res) {
-        res.sendFile(__dirname + "/public/index.html");
+        res.sendFile(__dirname + "/app/index.html");
     });
 
 var port = process.env.PORT || 8080;

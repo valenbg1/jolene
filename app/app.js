@@ -3,50 +3,50 @@
 /*global angular*/
 /*global $*/
 
-var IndexJS = {};
-IndexJS.angularJS = {};
+var AppJS = {};
+AppJS.angularJS = {};
 
 (function() {
     var jQueryDOM = {};
     var angularJS = {};
     
-    IndexJS.angularJS.votingAppFCC = angular.module("votingAppFCC", ["ngRoute", "ngAnimate"]);
+    AppJS.angularJS.votingAppFCC = angular.module("votingAppFCC", ["ngRoute", "ngAnimate"]);
     
     function btnsNavbarInactive() {
         jQueryDOM.btnsNavbar.removeClass("active");
     }
     
-    IndexJS.btnHomeActive = function() {
+    AppJS.btnHomeActive = function() {
         btnsNavbarInactive();
         jQueryDOM.btnHome.addClass("active");
     };
     
-    IndexJS.btnLoginActive = function() {
+    AppJS.btnLoginActive = function() {
         btnsNavbarInactive();
         jQueryDOM.btnLogin.addClass("active");
     };
     
-    IndexJS.btnAboutActive = function() {
+    AppJS.btnAboutActive = function() {
         btnsNavbarInactive();
         jQueryDOM.btnAbout.addClass("active");
     };
     
-    IndexJS.angularJS.votingAppFCC.config(
+    AppJS.angularJS.votingAppFCC.config(
         function($routeProvider, $locationProvider) {
             $routeProvider
                 .when("/", {
                     redirectTo: "/home"
                 })
                 .when("/home", {
-                    templateUrl: "pages/home.html",
+                    templateUrl: "home/home.html",
                     controller: "homeCtrl"
                 })
                 .when("/login", {
-                    templateUrl: "pages/login.html",
+                    templateUrl: "login/login.html",
                     controller: "loginCtrl"
                 })
                 .when("/about", {
-                    templateUrl: "pages/about.html",
+                    templateUrl: "about/about.html",
                     controller: "aboutCtrl"
                 })
                 .otherwise({
@@ -75,5 +75,5 @@ IndexJS.angularJS = {};
         });
     };
     
-    IndexJS.angularJS.votingAppFCC.controller("mainCtrl", angularJS.mainCtrl);
+    AppJS.angularJS.votingAppFCC.controller("mainCtrl", angularJS.mainCtrl);
 })();

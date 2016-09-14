@@ -1,6 +1,6 @@
 "use strict";
 
-/*global IndexJS*/
+/*global AppJS*/
 
 var AboutJS = {};
 
@@ -11,8 +11,8 @@ var AboutJS = {};
     angularJS.aboutCtrl = function($scope) {
         angularJS.$scope = $scope;
         
-        IndexJS.btnAboutActive();
+        AppJS.btnAboutActive();
     };
     
-    IndexJS.angularJS.votingAppFCC.controller("aboutCtrl", angularJS.aboutCtrl);
+    AppJS.angularJS.votingAppFCC.controller("aboutCtrl", angularJS.aboutCtrl);
 })();
