@@ -1,18 +1,23 @@
 "use strict";
 
+/*global angular*/
 /*global AppJS*/
 
 var HomeJS = {};
 
 (function() {
     var jQueryDOM = {};
-    var angularJS = {};
-        
-    angularJS.homeCtrl = function($scope) {
-        angularJS.$scope = $scope;
-        
-        AppJS.btnHomeActive();
-    };
     
-    AppJS.angularJS.votingAppFCC.controller("homeCtrl", angularJS.homeCtrl);
+    angular.module("votingAppFCC.home", ["ngRoute"])
+        .config(
+            function($routeProvider) {
+                $routeProvider.when("/home", {
+                    templateUrl: "home/home.html",
+                    controller: "HomeCtrl"
+                });
+            })
+        .controller("HomeCtrl",
+            function($scope) {
+                AppJS.btnHomeActive();
+            });
 })();

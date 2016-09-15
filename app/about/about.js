@@ -1,18 +1,23 @@
 "use strict";
 
+/*global angular*/
 /*global AppJS*/
 
 var AboutJS = {};
 
 (function() {
     var jQueryDOM = {};
-    var angularJS = {};
-        
-    angularJS.aboutCtrl = function($scope) {
-        angularJS.$scope = $scope;
-        
-        AppJS.btnAboutActive();
-    };
     
-    AppJS.angularJS.votingAppFCC.controller("aboutCtrl", angularJS.aboutCtrl);
+    angular.module("votingAppFCC.about", ["ngRoute"])
+        .config(
+            function($routeProvider) {
+                $routeProvider.when("/about", {
+                    templateUrl: "about/about.html",
+                    controller: "AboutCtrl"
+                });
+            })
+        .controller("AboutCtrl",
+            function($scope) {
+                AppJS.btnAboutActive();
+            });
 })();
