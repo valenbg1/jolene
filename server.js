@@ -1,6 +1,8 @@
 "use strict";
 
 var express = require("express");
+//var cookieParser = require("cookie-parser");
+var bodyParser = require("body-parser");
 var app = express();
 
 var passport = require("passport");
@@ -23,9 +25,16 @@ app.use("/", express.static("app"));
 
 app.use(passport.initialize());
 
-app.post("/login", passport.authenticate("local", {session: false}),
+app.post("/login", 
+    function(req, res, next) {
+        console.log("POST req to /login!");
+        next();
+    },
+    bodyParser.json(),
+    passport.authenticate("local", {session: false}),
     function(req, res) {
-        
+        console.log("auth successful!");
+        res.end();
     });
 
 app.get("/*",
