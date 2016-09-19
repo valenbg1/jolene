@@ -7,12 +7,11 @@ angular.module("votingAppFCC.auth", [])
         function($http) {
             var authService = {};
             
-            authService.login = function(username, password, callback) {
-                $http.post("/login", {
+            authService.login = function(username, password) {
+                return $http.post("/login", {
                     username: username,
                     password: password
-                })
-                .then(callback, callback);
+                });
             };
             
             return authService;

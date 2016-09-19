@@ -3,17 +3,21 @@
 var express = require("express");
 //var cookieParser = require("cookie-parser");
 //var bodyParser = require("body-parser");
-//var session = require("express-session");
+var session = require("./config/session");
 var app = express();
-
-var loginRoute = require("./routes/login");
 
 var passport = require("passport");
 require("./config/passport");
-    
+
+var loginRoute = require("./routes/login");
+
 app.use("/", express.static("public"));
 
+app.use(session);
+
 app.use(passport.initialize());
+    
+app.use(passport.session());
 
 app.use("/login", loginRoute);
 

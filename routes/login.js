@@ -6,15 +6,10 @@ var bodyParser = require("body-parser");
 
 var passport = require("passport");
 
-router.post("/", 
-    function(req, res, next) {
-        console.log("POST req to /login!");
-        next();
-    },
+router.post("/",
     bodyParser.json(),
-    passport.authenticate("local", {session: false}),
+    passport.authenticate("local"),
     function(req, res) {
-        console.log("auth successful!");
         res.end();
     });
 

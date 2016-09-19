@@ -14,13 +14,16 @@ angular.module("votingAppFCC.login", [
             });
         })
     .controller("LoginCtrl",
-        function(authService) {
+        function($window, authService) {
             var vm = this;
             
             vm.login = function() {
-                authService.login(vm.username, vm.password,
+                authService.login(vm.username, vm.password).then(
                     function(response) {
-                        console.log(response);
+                        $window.alert("LOGIN OK!");
+                    },
+                    function(response) {
+                        $window.alert("LOGIN FAILED!");
                     });
             };
         });
