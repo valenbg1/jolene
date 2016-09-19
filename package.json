@@ -9,8 +9,11 @@
   "bugs": "http://github.com/valenbg1/voting-webapp-fcc/issues",
   "keywords": [
     "AngularJS",
+    "body-parser",
     "Bootstrap",
+    "cookie-parser",
     "Express",
+    "express-session",
     "Font Awesome",
     "Full Stack",
     "Javascript",
@@ -18,11 +21,8 @@
     "Mongoose",
     "Node.js",
     "Passport",
-    "UI Bootstrap",
-    "body-parser",
-    "cookie-parser",
-    "express-session",
-    "passport-local"
+    "passport-local",
+    "UI Bootstrap"
   ],
   "scripts": {
     "start": "node server.js"
