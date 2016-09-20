@@ -2,7 +2,7 @@
 
 /*global angular*/
 
-angular.module("votingAppFCC.home", ["ngRoute"])
+angular.module("jolene.home", ["ngRoute"])
     .config(
         function($routeProvider) {
             $routeProvider.when("/home", {

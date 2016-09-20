@@ -2,7 +2,7 @@
 
 /*global angular*/
 
-angular.module("votingAppFCC.about", ["ngRoute"])
+angular.module("jolene.about", ["ngRoute"])
     .config(
         function($routeProvider) {
             $routeProvider.when("/about", {

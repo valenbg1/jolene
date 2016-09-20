@@ -1,2 +1,5 @@
 * NODE_ENV var.
 * Warning insecure login.
+* $routeChangeSuccess change way of active buttons.
+* Dropdown login menu.
+* Add GitHub repo to about page.

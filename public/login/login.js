@@ -2,9 +2,9 @@
 
 /*global angular*/
 
-angular.module("votingAppFCC.login", [
+angular.module("jolene.login", [
     "ngRoute",
-    "votingAppFCC.auth"])
+    "jolene.auth"])
     .config(
         function($routeProvider) {
             $routeProvider.when("/login", {

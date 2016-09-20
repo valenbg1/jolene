@@ -7,10 +7,10 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Voting web app for freeCodeCamp">
+        <meta name="description" content="Simple, superfast voting web app, backed by the MEAN stack, that works seamlessly across multiple devices">
         <meta name="author" content="Valentín Blanco">
         
-        <title>FCC voting app</title>
+        <title>Jolene</title>
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -28,7 +28,7 @@
         <script src="about/about.js"></script>
     </head>
     
-    <body ng-app="votingAppFCC" ng-controller="MainCtrl as vm">
+    <body ng-app="jolene" ng-controller="MainCtrl as vm">
         <div id="main_container" class="container">
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
@@ -39,7 +39,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         
-                        <a class="navbar-brand" href="/">FCC voting app</a>
+                        <a class="navbar-brand" href="/">Jolene</a>
                     </div>
                     
                     <div class="navbar-collapse" uib-collapse="vm.navBarCollapsed">
@@ -47,6 +47,16 @@
                             <li ng-model="vm.currentNavBarBtn" uib-btn-radio="'/home'"><a href="home">Home</a></li>
                             <li ng-model="vm.currentNavBarBtn" uib-btn-radio="'/login'"><a href="login">Log in</a></li>
                             <li ng-model="vm.currentNavBarBtn" uib-btn-radio="'/about'"><a href="about">About</a></li>
+                        </ul>
+                        
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle">Log in <span class="caret"></span></a>
+                                
+                                <ul class="dropdown-menu">
+                                    
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>

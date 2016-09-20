@@ -2,13 +2,13 @@
 
 /*global angular*/
 
-angular.module("votingAppFCC", [
+angular.module("jolene", [
     "ngRoute",
     "ngAnimate",
     "ui.bootstrap",
-    "votingAppFCC.home",
-    "votingAppFCC.login",
-    "votingAppFCC.about"])
+    "jolene.home",
+    "jolene.login",
+    "jolene.about"])
     .config(
         function($routeProvider, $locationProvider) {
             $routeProvider

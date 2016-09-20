@@ -2,7 +2,7 @@
 
 /*global angular*/
 
-angular.module("votingAppFCC.auth", [])
+angular.module("jolene.auth", [])
     .factory("authService",
         function($http) {
             var authService = {};

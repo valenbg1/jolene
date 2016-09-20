@@ -1,17 +1,17 @@
 {
-  "name": "voting-webapp-fcc",
-  "version": "1.0.0",
-  "description": "Voting web app for freeCodeCamp",
+  "name": "jolene",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Simple, superfast voting web app, backed by the MEAN stack, that works seamlessly across multiple devices",
   "repository": {
     "type": "git",
-    "url": "git+http://github.com/valenbg1/voting-webapp-fcc.git"
+    "url": "git+http://github.com/valenbg1/jolene.git"
   },
-  "bugs": "http://github.com/valenbg1/voting-webapp-fcc/issues",
+  "bugs": "http://github.com/valenbg1/jolene/issues",
   "keywords": [
     "AngularJS",
     "body-parser",
     "Bootstrap",
-    "cookie-parser",
     "Express",
     "express-session",
     "Font Awesome",
@@ -31,7 +31,6 @@
   "license": "GPL-3.0",
   "dependencies": {
     "body-parser": "^1.15.2",
-    "cookie-parser": "^1.4.3",
     "express": "^4.14.0",
     "express-session": "^1.14.1",
     "mongoose": "^4.5.10",
