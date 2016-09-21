@@ -8,7 +8,8 @@ angular.module("jolene", [
     "ui.bootstrap",
     "jolene.home",
     "jolene.login",
-    "jolene.about"])
+    "jolene.about",
+    "jolene.session"])
     .config(
         function($routeProvider, $locationProvider) {
             $routeProvider
@@ -22,15 +23,12 @@ angular.module("jolene", [
             $locationProvider.html5Mode(true);
         })
     .controller("MainCtrl",
-        function($scope, $location) {
+        function($scope, $location, sessionService) {
             var vm = this;
             
             vm.isRouteLoading = true;
             vm.navBarCollapsed = true;
-            
-            vm.changeNavBarCollapsed = function() {
-                vm.navBarCollapsed = !vm.navBarCollapsed;
-            };
+            vm.user = sessionService.user;
             
             $scope.$on("$routeChangeStart",
                 function() {
