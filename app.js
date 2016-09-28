@@ -8,16 +8,17 @@ var passport = require("passport");
 require("./config/passport");
 
 var loginRoute = require("./routes/login");
+var loggedinRoute = require("./routes/loggedin");
 
 app.use("/", express.static("public"));
 
 app.use(session);
 
 app.use(passport.initialize());
-    
 app.use(passport.session());
 
 app.use("/login", loginRoute);
+app.use("/loggedin", loggedinRoute);
 
 app.get("/*",
     function(req, res) {
