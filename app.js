@@ -1,11 +1,11 @@
 "use strict";
 
 var express = require("express");
-var session = require("./config/session");
+var session = require("./core/session");
 var app = express();
 
 var passport = require("passport");
-require("./config/passport");
+require("./core/passport");
 
 var loginRoute = require("./routes/login");
 var loggedinRoute = require("./routes/loggedin");

@@ -2,5 +2,5 @@
 * Warning insecure login.
 * $routeChangeSuccess change way of active buttons.
 * Add GitHub repo to about page.
-* Loading directive ? (for all the async work in the page).
-* Store session / login data in MongoDB.
+* Loading directive (for all the async work in the page).
+* Session expire.
